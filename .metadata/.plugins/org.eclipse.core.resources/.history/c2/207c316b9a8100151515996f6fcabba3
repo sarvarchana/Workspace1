@@ -1,0 +1,53 @@
+package TestCases;
+
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class FacebookSignup {
+
+	@Test
+	public void FacebookSignin(){
+		
+		FirefoxDriver d = new FirefoxDriver();
+		
+		d.manage().window().maximize();
+		
+		d.get("https://www.facebook.com/");
+		
+		d.findElement(By.id("u_0_b")).clear();
+		d.findElement(By.id("u_0_b")).sendKeys("aradsdjs");
+		
+		d.findElement(By.id("u_0_d")).clear();
+		d.findElement(By.id("u_0_d")).sendKeys("gfdlkgfd");
+		
+		d.findElement(By.id("u_0_f")).clear();
+		d.findElement(By.id("u_0_f")).sendKeys("tutes.dkdfdk@gmsil.com");
+		
+		d.findElement(By.id("u_0_i")).clear();
+		d.findElement(By.id("u_0_i")).sendKeys("tutes.dkdfdk@gmsil.com");
+		
+		d.findElement(By.id("u_0_k")).clear();
+		d.findElement(By.id("u_0_k")).sendKeys("prashanthi");
+		
+	
+		Select uiMonth = new Select(d.findElementById("month"));
+		uiMonth.selectByVisibleText("Jan");
+		
+		Select uiDay = new Select(d.findElementById("day"));
+		uiDay.selectByVisibleText("10");
+		
+		
+		Select uiYear = new Select(d.findElementById("year"));
+		uiYear.selectByVisibleText("2015");
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
