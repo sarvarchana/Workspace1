@@ -26,9 +26,8 @@ public class FacebookSignUp {
 		d.findElement(By.id("u_0_i")).clear();
 		d.findElement(By.id("u_0_i")).sendKeys("ar@gmail.com");
 		
-		
 		d.findElement(By.id("u_0_k")).clear();
-		d.findElement(By.id("u_0_k")).sendKeys("saibaba19");
+		d.findElement(By.id("u_0_k")).sendKeys("saibaba18");
 		
 	
 		Select uiMonth = new Select(d.findElementById("month"));
